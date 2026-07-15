@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CV | Cristina Griffa</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrapper">
+  <header class="site-header">
+    <h1><a href="index.html">Cristina Griffa</a></h1>
+    <nav class="site-nav">
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="policy.html">Policy work</a>
+      <a href="cv.html" class="active">CV</a>
+    </nav>
+  </header>
+
+  <main>
+    <p>You can find my CV here:</p>
+    <a class="cv-download" href="https://github.com/cgriffa/cv/blob/main/Cristina_Griffa_cv.pdf" target="_blank" rel="noopener">Download CV (PDF)</a>
+  </main>
+
+  <footer class="site-footer">
+    &copy; <span id="year"></span> Cristina Griffa
+  </footer>
+</div>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
