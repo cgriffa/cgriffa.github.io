@@ -113,7 +113,7 @@ nav.site-nav .links a:hover {
   max-width: var(--max-width);
   margin: 0 auto;
   padding: 1rem 2.5rem 4rem;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 .bio-photo {
@@ -140,8 +140,8 @@ nav.site-nav .links a:hover {
 }
 
 .bio-text {
-  flex: 1 1 380px;
-  min-width: 280px;
+  flex: 1 1 300px;
+  min-width: 220px;
   text-align: justify;
 }
 
@@ -298,5 +298,14 @@ footer.site-footer {
   .wrapper, .hero, .bio-grid, .contact-block {
     padding-left: 1.25rem;
     padding-right: 1.25rem;
+  }
+  .bio-grid {
+    flex-direction: column;
+  }
+  .bio-photo {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    flex-basis: auto;
   }
 }
