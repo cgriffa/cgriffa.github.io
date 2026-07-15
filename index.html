@@ -5,39 +5,54 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Cristina Griffa</title>
 <meta name="description" content="Cristina Griffa - Assistant Professor, Department of Economics, University of Chile.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="wrapper">
-  <header class="site-header">
-    <h1><a href="index.html">Cristina Griffa</a></h1>
-    <nav class="site-nav">
+  <nav class="site-nav">
+    <a class="brand" href="index.html">Cristina Griffa</a>
+    <div class="links">
       <a href="index.html" class="active">Home</a>
       <a href="research.html">Research</a>
       <a href="teaching.html">Teaching</a>
       <a href="policy.html">Policy work</a>
       <a href="cv.html">CV</a>
-    </nav>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <h1>Cristina Griffa</h1>
   </header>
 
-  <main>
-    <p class="home-intro">I am an Assistant Professor in the <a href="https://fen.uchile.cl/en" target="_blank" rel="noopener">Department of Economics</a> at University of Chile.</p>
+  <div class="bio-grid">
+    <div class="bio-photo">
+      <img src="photo.jpg" alt="Cristina Griffa">
+    </div>
+    <div class="bio-text">
+      <p>I am an Assistant Professor in the <a href="https://fen.uchile.cl/en" target="_blank" rel="noopener">Department of Economics</a> at University of Chile.</p>
+      <p>My research interests focus on the fields of Monetary Economics and Macroeconomics, with a focus on inflation dynamics, expectations formation, and heterogeneity.</p>
+    </div>
+  </div>
 
-    <p class="home-intro">My research interests focus on the fields of Monetary Economics and Macroeconomics, with a focus on inflation dynamics, expectations formation, and heterogeneity.</p>
-
-    <div class="cta-row">
-      <a href="https://github.com/cgriffa/cv/blob/main/Cristina_Griffa_cv.pdf" target="_blank" rel="noopener">CV &#8594;</a>
+  <div class="contact-block">
+    <h2>Contact Information</h2>
+    <div class="contact-list">
       <a href="mailto:cgriffa@fen.uchile.cl">cgriffa@fen.uchile.cl</a>
+      <a href="https://github.com/cgriffa/cv/blob/main/Cristina_Griffa_cv.pdf" target="_blank" rel="noopener">CV (PDF)</a>
+    </div>
+    <div class="social-row">
       <a href="https://www.linkedin.com/in/cristina-griffa" target="_blank" rel="noopener">LinkedIn</a>
       <a href="https://twitter.com/cgriffa" target="_blank" rel="noopener">Twitter/X</a>
       <a href="https://github.com/cgriffa" target="_blank" rel="noopener">GitHub</a>
     </div>
-  </main>
+  </div>
 
   <footer class="site-footer">
     &copy; <span id="year"></span> Cristina Griffa
   </footer>
-</div>
-<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>

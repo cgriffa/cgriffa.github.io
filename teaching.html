@@ -4,22 +4,26 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Teaching | Cristina Griffa</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="wrapper">
-  <header class="site-header">
-    <h1><a href="index.html">Cristina Griffa</a></h1>
-    <nav class="site-nav">
+  <nav class="site-nav">
+    <a class="brand" href="index.html">Cristina Griffa</a>
+    <div class="links">
       <a href="index.html">Home</a>
       <a href="research.html">Research</a>
       <a href="teaching.html" class="active">Teaching</a>
       <a href="policy.html">Policy work</a>
       <a href="cv.html">CV</a>
-    </nav>
-  </header>
+    </div>
+  </nav>
 
-  <main>
+  <main class="wrapper">
+    <h1>Teaching</h1>
+
     <p>Undergraduate (pregrado) Office Hours: <a href="https://zcal.co/cgriffa/ugstudents" target="_blank" rel="noopener">Schedule here</a> &mdash; <a href="https://fenuchile.webex.com/meet/cgriffa" target="_blank" rel="noopener">Webex link</a></p>
 
     <h2>University of Chile</h2>
@@ -55,7 +59,7 @@
   <footer class="site-footer">
     &copy; <span id="year"></span> Cristina Griffa
   </footer>
-</div>
-<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
