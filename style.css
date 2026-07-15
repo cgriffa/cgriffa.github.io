@@ -331,6 +331,13 @@ nav.site-nav .links a:hover {
   background: var(--pill-border);
 }
 
+.section-note {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  font-style: italic;
+  margin: 0 0 0.4rem;
+}
+
 /* simple lists (teaching, policy) */
 .wrapper ul {
   padding-left: 1.3rem;
