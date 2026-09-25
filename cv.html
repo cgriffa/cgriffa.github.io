@@ -26,10 +26,18 @@
     <h1>CV</h1>
 
     <div class="cv-preview">
-      <iframe src="https://mozilla.github.io/pdf.js/web/viewer.html?file=https%3A%2F%2Fraw.githubusercontent.com%2Fcgriffa%2FCristina_Griffa_cv%2Fmain%2Fmain.pdf" frameborder="0"></iframe>
+      <iframe id="cv-frame" src="" frameborder="0"></iframe>
     </div>
 
-    <a class="cv-download" href="https://raw.githubusercontent.com/cgriffa/Cristina_Griffa_cv/main/main.pdf" target="_blank" rel="noopener">Download CV (PDF)</a>
+    <a class="cv-download" id="cv-download-link" href="https://raw.githubusercontent.com/cgriffa/Cristina_Griffa_cv/main/main.pdf" target="_blank" rel="noopener">Download CV (PDF)</a>
+
+    <script>
+      (function () {
+        var cacheBustedPdf = "https://raw.githubusercontent.com/cgriffa/Cristina_Griffa_cv/main/main.pdf?v=" + Date.now();
+        document.getElementById("cv-frame").src = "https://mozilla.github.io/pdf.js/web/viewer.html?file=" + encodeURIComponent(cacheBustedPdf);
+        document.getElementById("cv-download-link").href = cacheBustedPdf;
+      })();
+    </script>
   </main>
 
   <footer class="site-footer">
